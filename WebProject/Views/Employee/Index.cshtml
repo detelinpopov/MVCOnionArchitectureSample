@@ -1,0 +1,14 @@
+﻿@using GridMvc.Html
+@model IEnumerable<Interfaces.Sql.Entities.IEmployee>
+@{
+	ViewBag.Title = "Employees";
+}
+
+@Html.Grid(Model).Columns(columns =>
+{
+	columns.Add(e => e.Id).Titled("Id").Sortable(true);
+	columns.Add(e => e.Name).Titled("Name").Sortable(true);
+	columns.Add(e => e.Role).Titled("Role").Sortable(true);
+	columns.Add(e => e.Email).Titled("Email").Sortable(true);
+
+}).WithPaging(10)
