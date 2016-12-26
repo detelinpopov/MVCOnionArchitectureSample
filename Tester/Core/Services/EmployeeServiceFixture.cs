@@ -30,7 +30,6 @@ namespace Tester.Core.Services
 		{
 			IEmployee employee = new Employee();
 			employee.Name = "TestName " + index;
-			employee.Age = 30 + index;
 			employee.Email = "test@test.com";
 			employee.ManagerId = index;
 			return employee;
@@ -39,7 +38,6 @@ namespace Tester.Core.Services
 		private bool VerifyEmployee(IEmployee original, IEmployee toCompare)
 		{
 			Assert.AreEqual(original.Name, toCompare.Name);
-			Assert.AreEqual(original.Age, toCompare.Age);
 			Assert.AreEqual(original.Email, toCompare.Email);
 			Assert.AreEqual(original.ManagerId, toCompare.ManagerId);
 

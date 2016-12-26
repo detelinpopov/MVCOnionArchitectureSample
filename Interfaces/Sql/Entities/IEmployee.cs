@@ -2,8 +2,6 @@
 {
 	public interface IEmployee
 	{
-		int Age { get; set; }
-
 		string Email { get; set; }
 
 		int Id { get; set; }
