@@ -76,8 +76,9 @@ namespace Tester.Core.Services
             IEmployee employee = CreateEmployee();
             SetupRepositoryMock();
 
-            // Act
             EmployeeService service = new EmployeeService(_repositoryMock.Object);
+
+            // Act
             await service.SaveAsync(employee);
 
             // Assert
