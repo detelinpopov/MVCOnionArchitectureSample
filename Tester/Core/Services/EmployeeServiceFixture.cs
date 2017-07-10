@@ -49,10 +49,10 @@ namespace Tester.Core.Services
 		{
 			// Arrange
 			SetupRepositoryMock();
+		    EmployeeService service = new EmployeeService(_repositoryMock.Object);
 
-			// Act
-			EmployeeService service = new EmployeeService(_repositoryMock.Object);
-			await service.FindAsync(1);
+            // Act
+            await service.FindAsync(1);
 
 			// Assert
 			_repositoryMock.Verify(r => r.FindAsync(It.IsAny<int>()), Times.Once);
@@ -65,9 +65,10 @@ namespace Tester.Core.Services
 			IEmployee employee = CreateEmployee();
 			SetupRepositoryMock();
 
-			// Act
-			EmployeeService service = new EmployeeService(_repositoryMock.Object);
-			await service.SaveAsync(employee);
+		    EmployeeService service = new EmployeeService(_repositoryMock.Object);
+
+            // Act
+            await service.SaveAsync(employee);
 
 			// Assert
 			_repositoryMock.Verify(r => r.SaveAsync(It.IsAny<IEmployee>()), Times.Once);
