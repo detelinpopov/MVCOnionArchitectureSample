@@ -10,27 +10,27 @@ namespace Sql.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        private readonly CodingExerciseContext _context;
-
-        public EmployeeRepository()
-        {
-            _context = new CodingExerciseContext();
-        }
-
-
         public virtual async Task SaveAsync(IEmployee employee)
         {
-            var employeeAsEntity = employee as Employee;
-            if (employeeAsEntity == null)
-                throw new ArgumentException("Invalid Employee.");
+            using (CodingExerciseContext context = new CodingExerciseContext())
+            {
+                Employee employeeAsEntity = employee as Employee;
+                if (employeeAsEntity == null)
+                {
+                    throw new ArgumentException("Invalid Employee.");
+                }
 
-            _context.Employees.Add(employeeAsEntity);
-            await _context.SaveChangesAsync();
+                context.Employees.Add(employeeAsEntity);
+                await context.SaveChangesAsync();
+            }
         }
 
         public virtual async Task<IEmployee> FindAsync(int id)
         {
-            return await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
+            using (CodingExerciseContext context = new CodingExerciseContext())
+            {
+                return await context.Employees.FirstOrDefaultAsync(x => x.Id == id);
+            }
         }
     }
 }
