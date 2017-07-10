@@ -11,7 +11,7 @@ namespace WebProject
         {
             AreaRegistration.RegisterAllAreas();
 
-			Registar.Start();
+			Register.Start();
 
 			FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

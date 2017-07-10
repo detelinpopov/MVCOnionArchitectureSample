@@ -18,7 +18,7 @@ using Sql.Repositories;
 
 namespace InversionOfControl
 {
-	public class Registar
+	public class Register
 	{
 		public static void Start()
 		{

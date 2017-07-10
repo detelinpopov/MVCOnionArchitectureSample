@@ -199,7 +199,6 @@ C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfCo
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Core.pdb
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Interfaces.pdb
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Sql.pdb
-C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\EntityFramework.xml
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Microsoft.Practices.ServiceLocation.xml
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\InversionOfControl\bin\Debug\Microsoft.Practices.Unity.xml
