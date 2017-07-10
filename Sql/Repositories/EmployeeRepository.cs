@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
 using System.Threading.Tasks;
-using Interfaces.Sql.Context;
 using Interfaces.Sql.Entities;
 using Interfaces.Sql.Repositories;
 using Sql.Context;
@@ -15,20 +14,15 @@ namespace Sql.Repositories
 
         public EmployeeRepository()
         {
+            _context = new CodingExerciseContext();
         }
 
-        public EmployeeRepository(ICodingExerciseContext context)
-        {
-            _context = context as CodingExerciseContext;
-        }
 
         public virtual async Task SaveAsync(IEmployee employee)
         {
-            Employee employeeAsEntity = employee as Employee;
+            var employeeAsEntity = employee as Employee;
             if (employeeAsEntity == null)
-            {
                 throw new ArgumentException("Invalid Employee.");
-            }
 
             _context.Employees.Add(employeeAsEntity);
             await _context.SaveChangesAsync();

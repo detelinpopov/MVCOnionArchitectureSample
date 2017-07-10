@@ -15,7 +15,6 @@ namespace Core.TestDataGenerators
 			IList<IEmployee> employees = new List<IEmployee>();
 			IList<string> roles = new List<string> { "Developer", "QA", "Manager", "Support" };
 			Random random = new Random();
-
 			for (int i = 0; i < count; i++)
 			{
 				IEmployee employee = new Employee();

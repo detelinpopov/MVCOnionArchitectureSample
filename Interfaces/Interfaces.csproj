@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Core\Services\IEmployeeService.cs" />
     <Compile Include="Core\TestDataGenerators\IEmployeeDataGenerator.cs" />
-    <Compile Include="Sql\Context\ICodingExerciseContext.cs" />
     <Compile Include="Sql\Entities\IEmployee.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sql\Repositories\IEmployeeRepository.cs" />
