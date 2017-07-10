@@ -22,3 +22,8 @@ C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Interfaces\bin\Debug\Interf
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.dll
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Interfaces\obj\Debug\Interfaces.pdb
