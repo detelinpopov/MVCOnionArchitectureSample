@@ -25,8 +25,11 @@ namespace Sql.Repositories
 		public virtual async Task SaveAsync(IEmployee employee)
 		{
 			Employee employeeAsEntity = employee as Employee;
-			_context.Employees.Add(employeeAsEntity);
-			await _context.SaveChangesAsync();
+		    if (employeeAsEntity != null)
+		    {
+		        _context.Employees.Add(employeeAsEntity);
+		        await _context.SaveChangesAsync();
+		    }
 		}
 
 		public virtual async Task<IEmployee> FindAsync(int id)
