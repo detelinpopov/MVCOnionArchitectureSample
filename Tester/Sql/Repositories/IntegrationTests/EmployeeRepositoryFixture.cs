@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Threading.Tasks;
 using Interfaces.Sql.Entities;
 using NUnit.Framework;
@@ -65,6 +66,18 @@ namespace Tester.Sql.Repositories.IntegrationTests
                 Assert.AreEqual(employee.ManagerId, employeeFromDatabase.ManagerId);
                 Assert.AreEqual(employee.Role, employeeFromDatabase.Role);
             }
+        }
+
+        [Test]
+        [ExpectedException(typeof(ArgumentException))]
+        public async Task SaveAsync_ThrowsException_IfTheEmployeeIsNotValid()
+        {
+            // Arrange
+            IEmployee employee = null;
+            var repository = new EmployeeRepository();
+
+            // Act   
+            await repository.SaveAsync(employee);
         }
     }
 }
