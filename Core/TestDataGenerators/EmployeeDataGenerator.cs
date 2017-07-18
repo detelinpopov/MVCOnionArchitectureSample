@@ -15,6 +15,7 @@ namespace Core.TestDataGenerators
 			IList<IEmployee> employees = new List<IEmployee>();
 			IList<string> roles = new List<string> { "Developer", "QA", "Manager", "Support" };
 			Random random = new Random();
+
 			for (int i = 0; i < count; i++)
 			{
 				IEmployee employee = new Employee();
@@ -22,7 +23,6 @@ namespace Core.TestDataGenerators
 				employee.Name = "Fake employee " + (i + 1);
 				employee.Email = $"fake_employee_{i + 1}@test.com";
 				employee.Role = roles[random.Next(0, roles.Count)];
-
 				employees.Add(employee);
 			}
 
