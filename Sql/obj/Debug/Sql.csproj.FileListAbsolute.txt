@@ -64,7 +64,6 @@ C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\bin\Debug\Newtonsoft.Js
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.csprojResolveAssemblyReference.cache
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.dll
 C:\Users\devadmin\Desktop\MVCOnionArchitectureSample\Sql\obj\Debug\Sql.pdb
-C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.dll.config
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.dll
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\Sql.pdb
 C:\Users\Detelin Popov\Documents\GitHub\MVCOnionArchitectureSample\Sql\bin\Debug\EntityFramework.dll

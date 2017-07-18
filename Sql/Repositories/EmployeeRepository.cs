@@ -10,7 +10,7 @@ namespace Sql.Repositories
 {
     public class EmployeeRepository : IEmployeeRepository
     {
-        public virtual async Task SaveAsync(IEmployee employee)
+        public virtual async Task<IEmployee> SaveAsync(IEmployee employee)
         {
             using (CodingExerciseContext context = new CodingExerciseContext())
             {
@@ -22,6 +22,8 @@ namespace Sql.Repositories
 
                 context.Employees.Add(employeeAsEntity);
                 await context.SaveChangesAsync();
+
+                return employeeAsEntity;
             }
         }
 

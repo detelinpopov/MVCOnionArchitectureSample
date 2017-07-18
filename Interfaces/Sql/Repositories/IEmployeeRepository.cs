@@ -8,6 +8,6 @@ namespace Interfaces.Sql.Repositories
 	{
 		Task<IEmployee> FindAsync(int id);
 
-		Task SaveAsync(IEmployee employee);
+		Task<IEmployee> SaveAsync(IEmployee employee);
 	}
 }

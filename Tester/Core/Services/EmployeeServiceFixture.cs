@@ -17,7 +17,7 @@ namespace Tester.Core.Services
         {
             IEmployee employee = CreateEmployee();
             _repositoryMock = new Mock<EmployeeRepository>();
-            _repositoryMock.Setup(r => r.SaveAsync(It.IsAny<IEmployee>())).Returns(Task.CompletedTask);
+            _repositoryMock.Setup(r => r.SaveAsync(It.IsAny<IEmployee>())).ReturnsAsync(employee);
             _repositoryMock.Setup(r => r.FindAsync(It.IsAny<int>())).ReturnsAsync(employee);
         }
 

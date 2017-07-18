@@ -9,7 +9,7 @@ namespace Sql.Context
         public CodingExerciseContext()
             : base("CodingExerciseContext")
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<CodingExerciseContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CodingExerciseContext>());
         }
 
         public DbSet<Employee> Employees { get; set; }
