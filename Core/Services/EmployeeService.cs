@@ -22,12 +22,6 @@ namespace Core.Services
 			await _repository.SaveAsync(employee);
 		}
 
-		public IEmployee CreateNewObject()
-		{
-			IEmployee employee = new Employee();
-			return employee;
-		}
-
 		public async Task<IEmployee> FindAsync(int id)
 		{
 			IEmployee employee = await _repository.FindAsync(id);
