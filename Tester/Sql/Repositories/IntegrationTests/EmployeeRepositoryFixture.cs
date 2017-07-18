@@ -15,7 +15,7 @@ namespace Tester.Sql.Repositories.IntegrationTests
         private IEmployee CreateEmployee(int index = 1)
         {
             IEmployee employee = new Employee();
-            employee.Name = "Test name " + index;
+            employee.Name = $"Test name {index}";
             employee.Email = $"test{index}@test.com";
             employee.ManagerId = index;
             return employee;
